@@ -40,6 +40,10 @@ service:
   type: ClusterIP
   port: 80
 
+rtmp:
+  service:
+    type: LoadBalancer
+
 ingress:
   enabled: false
   className: ""
